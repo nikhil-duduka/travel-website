@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+
+.navbar {
+  background: linear-gradient(to right, #007bff, #333); /* Added gradient */
+  display: flex; /* Added flexbox */
+  align-items: center; /* Added flexbox */
+  justify-content: space-between; /* Added flexbox */
+}
+
+.navbar-nav.nav-link {
+  color: #fff;
+}
+
+/* Main Styles */
+
+.flight-search-bar {
+  margin-top: 30px;
+}
+
+.flight-search-bar .form-group {
+  margin-bottom: 10px;
+}
+
+/* Styling Input Textboxes */
+.form-control {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.3);
+}
+
+.search-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: bold;
+}
+
+.search-btn:hover {
+    background-color:#0056b3; /* Changed color */
+}
+
+/* Flight Card Styles */
+.flight-card {
+    background-color:#f5f5f5;
+    border-radius:8px;
+    margin-bottom:20px;
+    padding:20px;
+    box-shadow:0px2px4px rgba(0,0,0,0.1);
+    transition:transform .3s ease-in-out; /* Added transition */
+}
+
+.flight-card:hover {
+    transform : scale(1.05); /* Added transform */
+}
+
+.card-title {
+    font-size :20px;
+    margin-bottom :10px;
+}
+
+.card-info {
+    color :#666;
+}
+
+.book-btn {
+    background-color:#28a745;
+    border-color:#28a745;
+    margin-top :10px;
+}
+
+.book-btn:hover {
+    background-color:#218838; /* Changed color */
+    border-color:#1e7e34; /* Changed color */
+}
+
+/* Footer Styles */
+
+footer {
+    background : linear-gradient(to right,#007bff,#333); /* Added gradient */
+    color :#fff;
+    padding :20px0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align : center;
+    display : flex; /* Added flexbox */
+    align-items : center; /* Added flexbox */
+    justify-content : center; /* Added flexbox */
+}
+
+/* Media Queries */
+
+@media (max-width :768px) { /* Added media query */
+    .navbar-nav.nav-link { 
+        display : none; /* Hide nav links on small screens */
+    }
+    
+    .flight-search-bar .form-group { 
+        width :100%; /* Make input boxes full width on small screens */
+        display : block; /* Make input boxes stack vertically on small screens */
+    }
+    
+}
